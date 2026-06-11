@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TXST YouTube — FY26 Metrics Report</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 15px; color: #1a1a1a; background: #f7f7f5; padding: 2rem 1rem; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .page-title { font-size: 28px; font-weight: 700; color: #1F497D; margin-bottom: 4px; }
+  .page-sub { font-size: 13px; color: #888; margin-bottom: 2rem; }
+  .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 2rem; }
+  .summary-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px 16px; }
+  .summary-label { font-size: 11px; color: #888; margin-bottom: 4px; }
+  .summary-value { font-size: 22px; font-weight: 700; color: #1a1a1a; }
+  .summary-sub { font-size: 11px; color: #aaa; margin-top: 2px; }
+  h1 { font-size: 22px; font-weight: 700; color: #1F497D; margin: 2rem 0 1rem; padding-bottom: 6px; border-bottom: 2px solid #2E75B6; }
+  h2 { font-size: 16px; font-weight: 600; color: #2E75B6; margin: 1.5rem 0 0.75rem; }
+  .card { background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 16px 18px; margin-bottom: 12px; }
+  .card.lowest { border-color: #f5c1c1; }
+  .card.top-pre { border-color: #9FE1CB; }
+  .card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+  .card-left { flex: 1; min-width: 0; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; color: #fff; }
+  .badge-blue { background: #2E75B6; }
+  .badge-gray { background: #888; }
+  .badge-red { background: #C00000; }
+  .badge-green { background: #375623; }
+  .card-title { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 2px; }
+  .card-meta { font-size: 12px; color: #888; margin-bottom: 4px; }
+  .card-link a { font-size: 12px; color: #185FA5; text-decoration: none; }
+  .card-link a:hover { text-decoration: underline; }
+  .card-views { text-align: right; flex-shrink: 0; }
+  .card-views .num { font-size: 24px; font-weight: 700; color: #1a1a1a; }
+  .card-views .lbl { font-size: 11px; color: #aaa; }
+  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 10px; }
+  .stat { background: #f7f7f5; border-radius: 6px; padding: 8px 10px; }
+  .stat-label { font-size: 11px; color: #888; margin-bottom: 2px; }
+  .stat-value { font-size: 14px; font-weight: 600; color: #1a1a1a; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .pill { font-size: 11px; color: #555; background: #f0f0ee; padding: 3px 10px; border-radius: 20px; }
+  .note-danger { background: #FCEAEA; border: 1px solid #f5c1c1; border-radius: 6px; padding: 10px 14px; margin-top: 10px; font-size: 12px; color: #A32D2D; }
+  .note-info { background: #E8F4F8; border: 1px solid #b5d4f4; border-radius: 6px; padding: 10px 14px; margin-top: 10px; font-size: 12px; color: #185FA5; }
+  .divider { border: none; border-top: 1px solid #e0e0e0; margin: 1.5rem 0; }
+  .tab-row { display: flex; gap: 6px; margin-bottom: 1rem; }
+  .tab-btn { font-size: 13px; padding: 6px 16px; border-radius: 6px; border: 1px solid #ccc; cursor: pointer; background: transparent; color: #666; }
+  .tab-btn.active { background: #1F497D; color: #fff; border-color: #1F497D; font-weight: 600; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+  @media (max-width: 600px) {
+    .summary-grid { grid-template-columns: repeat(2, 1fr); }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <p class="page-title">TXST YouTube — FY26 Metrics Report</p>
+  <p class="page-sub">FY26 (Sept 1, 2025 – Present) &nbsp;·&nbsp; Excludes live streams and podcast videos</p>
+
+  <div class="summary-grid">
+    <div class="summary-card"><div class="summary-label">Videos published</div><div class="summary-value">22</div><div class="summary-sub">Long-form, FY26</div></div>
+    <div class="summary-card"><div class="summary-label">Shorts published</div><div class="summary-value">30</div><div class="summary-sub">FY26</div></div>
+    <div class="summary-card"><div class="summary-label">Top video views</div><div class="summary-value">2,866</div><div class="summary-sub">Each and Every One</div></div>
+    <div class="summary-card"><div class="summary-label">Top short views</div><div class="summary-value">10,075</div><div class="summary-sub">TXST from all angles</div></div>
+  </div>
+
+  <h1>Executive summary</h1>
+  <p style="font-size:14px;line-height:1.7;color:#333;margin-bottom:1.5rem;">TXST published 22 long-form videos and 30 Shorts in FY26 (Sept 1, 2025 – present), excluding live streams and podcast episodes. Across both formats, content reached well above 90% non-subscriber audiences, confirming YouTube's role as a top-of-funnel discovery channel rather than a subscriber retention tool. Institutional highlight videos drove the strongest video performance, while campus life and experiential content led Shorts. The pre-FY26 benchmark for Shorts — a student-purchased dorm tour — remains the highest-liked piece of short-form content in the dataset, reinforcing the value of authentic, campus-specific storytelling.</p>
+
+  <h1>Notable patterns</h1>
+  <h2>Videos</h2>
+  <ul style="font-size:14px;line-height:1.8;color:#333;padding-left:1.5rem;margin-bottom:1.5rem;">
+    <li><strong>Institutional highlights dominate.</strong> The top two videos — <em>Each and Every One</em> and <em>TXST in 2025: Record Success</em> — are broad-audience institutional pieces that likely benefited from email or organic amplification beyond the YouTube channel itself.</li>
+    <li><strong>Sharp drop-off after #3.</strong> Views fall from 1,852 at #3 to 1,008 at #4 and 567 at #5, suggesting the top performers had unusual reach drivers that most FY26 videos did not.</li>
+    <li><strong>Each and Every One generated 111 shares</strong> — by far the most of any video in the dataset — and skewed heavily toward the 65+ age group (34.8%). This suggests emotional resonance and possible alumni or community sharing behavior.</li>
+    <li><strong>TXST Autocomplete Pt. 1 had the highest average view duration (7:35)</strong> in the top 5, indicating strong watch-through despite a lower view count — a signal of content quality that view numbers alone don't capture.</li>
+    <li><strong>Pre-FY26 benchmark (Drug Resistant Fungal Infections) has 17,363 views</strong> but an average view duration of only 0:40, indicating mostly browse-off behavior. High views with low retention typically signals search/recommendation discovery without sustained interest.</li>
+    <li><strong>The Battery Evolves (163 views) is a niche research topic.</strong> Low performance is expected for subject-matter-specific content and should be benchmarked separately from broad-audience institutional videos.</li>
+  </ul>
+  <h2>Shorts</h2>
+  <ul style="font-size:14px;line-height:1.8;color:#333;padding-left:1.5rem;margin-bottom:2rem;">
+    <li><strong>Campus life content performs best.</strong> The top short (<em>TXST from all angles</em>, 10,075 views) and the pre-FY26 benchmark (<em>Falls Hall Dorm Tour</em>, 11,326 views) both focus on campus experience — consistent with a prospective student and family audience.</li>
+    <li><strong>The pre-FY26 benchmark still outperforms all FY26 Shorts.</strong> Falls Hall Dorm Tour leads all shorts in likes (188) and views (11,326). It was purchased from a student creator with compensation based on Instagram view count — a model worth revisiting for future content acquisition.</li>
+    <li><strong>25–34 is the dominant age group across the top 3 Shorts</strong> (54.4%, 27.3%, and 50.5% respectively). This is slightly older than a traditional prospective student audience and may suggest alumni, parent, or young professional engagement.</li>
+    <li><strong>Ring Ceremony at TXST (9 views) is flagged, not failed.</strong> This short was uploaded in May 2026 and has been blocked worldwide due to copyrighted music. The view count is not a meaningful performance signal.</li>
+  </ul>
+
+  <div class="tab-row">
+    <button class="tab-btn active" onclick="showTab('videos', this)">Videos</button>
+    <button class="tab-btn" onclick="showTab('shorts', this)">Shorts</button>
+  </div>
+
+  <!-- VIDEOS TAB -->
+  <div id="tab-videos" class="tab-panel active">
+
+    <h1>Videos</h1>
+    <h2>Top 5 performing videos — FY26</h2>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-blue">#1</span>
+          <div class="card-title">Each and Every One</div>
+          <div class="card-meta">Uploaded: Feb 2026</div>
+          <div class="card-link"><a href="https://youtu.be/1o2rFx6It60?si=h8mr0df3UKz1PlQA" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">2,866</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">42.6 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">2:13</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">111</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">43</div></div>
+        <div class="stat"><div class="stat-label">Comments</div><div class="stat-value">3</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">91.7%</div></div>
+      </div>
+      <div class="pills"><span class="pill">65+ top age group (34.8%)</span><span class="pill">Highest shares in FY26</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-blue">#2</span>
+          <div class="card-title">TXST in 2025: Record Success</div>
+          <div class="card-meta">Uploaded: Oct 2025</div>
+          <div class="card-link"><a href="https://youtu.be/pZN7oIYcn_E?si=icwDidbz3lMI9n-g" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">2,770</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">53.3 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">2:53</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">72</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">33</div></div>
+        <div class="stat"><div class="stat-label">Comments</div><div class="stat-value">9</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">91.3%</div></div>
+      </div>
+      <div class="pills"><span class="pill">Highest watch time in top 5</span><span class="pill">Most comments in top 5</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-blue">#3</span>
+          <div class="card-title">Happy holidays, Bobcat family!</div>
+          <div class="card-meta">Uploaded: Dec 2025</div>
+          <div class="card-link"><a href="https://youtu.be/ltcMcb3xrfY?si=CwCwb7uXAQ5PMFvP" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">1,852</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">38 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">3:03</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">51</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">76</div></div>
+        <div class="stat"><div class="stat-label">Comments</div><div class="stat-value">6</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">93%</div></div>
+      </div>
+      <div class="pills"><span class="pill">Most likes in top 5 (76)</span><span class="pill">18–24 top age group (19.3%)</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-gray">#4</span>
+          <div class="card-title">Student Advice for Having Roommates</div>
+          <div class="card-meta">Uploaded: Jan 2026</div>
+          <div class="card-link"><a href="https://youtu.be/OjPjoQ25nL8?si=qA0N_3pV6gq3z02m" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">1,008</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">29.3 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">4:20</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">18</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">19</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">84.5%</div></div>
+        <div class="stat"><div class="stat-label">Demographics</div><div class="stat-value">Below threshold</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-gray">#5</span>
+          <div class="card-title">TXST Autocomplete: Interns Answer Questions, Pt. 1</div>
+          <div class="card-meta">Uploaded: Nov 2025</div>
+          <div class="card-link"><a href="https://youtu.be/kZqvJEe8mZk?si=DU3xyXwAGYS8OtR9" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">567</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">28.8 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">7:35</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">16</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">12</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">88.2%</div></div>
+        <div class="stat"><div class="stat-label">Avg duration note</div><div class="stat-value">Highest in top 5</div></div>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <h2>Lowest performing FY26 video</h2>
+    <div class="card lowest">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-red">Lowest</span>
+          <div class="card-title">The Battery Evolves</div>
+          <div class="card-meta">Uploaded: Nov 2025</div>
+          <div class="card-link"><a href="https://www.youtube.com/watch?v=3z7gCMOyXAU" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">163</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">2.3 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">2:08</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">3</div></div>
+        <div class="stat"><div class="stat-label">Comments</div><div class="stat-value">0</div></div>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <h2>Top performing video — pre-FY26 (before Sept 2025)</h2>
+    <div class="card top-pre">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-green">Pre-FY26 top</span>
+          <div class="card-title">Drug Resistant Fungal Infections Growing Worldwide</div>
+          <div class="card-meta">Uploaded: ~2023</div>
+          <div class="card-link"><a href="https://youtu.be/q2s1PPChOFs?si=4Mq1rouJXPlqjFWl" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">17,363</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">81.4 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">0:40</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">99.2%</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">18</div></div>
+        <div class="stat"><div class="stat-label">Comments</div><div class="stat-value">1</div></div>
+        <div class="stat"><div class="stat-label">Demographics</div><div class="stat-value">Below threshold</div></div>
+      </div>
+      <div class="pills"><span class="pill">Low avg duration — likely browse-off behavior</span></div>
+    </div>
+
+  </div><!-- end tab-videos -->
+
+  <!-- SHORTS TAB -->
+  <div id="tab-shorts" class="tab-panel">
+
+    <h1>Shorts</h1>
+    <h2>Top 5 performing shorts — FY26</h2>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-blue">#1</span>
+          <div class="card-title">Texas State University from all angles</div>
+          <div class="card-meta">Uploaded: Oct 2025</div>
+          <div class="card-link"><a href="https://www.youtube.com/watch?v=NhAU67JXrx0" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">10,075</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">18.8 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">0:33</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">31</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">129</div></div>
+        <div class="stat"><div class="stat-label">Comments</div><div class="stat-value">7</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">91.7%</div></div>
+      </div>
+      <div class="pills"><span class="pill">25–34 top age group (54.4%)</span><span class="pill">Most likes in top 5</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-blue">#2</span>
+          <div class="card-title">POV: A TXST Bobcat Football Game in the Fall</div>
+          <div class="card-meta">Uploaded: Nov 2025</div>
+          <div class="card-link"><a href="https://www.youtube.com/watch?v=yg9nYomJNcQ" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">3,173</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">20.9 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">1:18</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">9</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">80</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">90.2%</div></div>
+        <div class="stat"><div class="stat-label">Watch time note</div><div class="stat-value">Highest in top 5</div></div>
+      </div>
+      <div class="pills"><span class="pill">25–34 top age group (27.3%)</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-blue">#3</span>
+          <div class="card-title">Campus Dining at Texas State University</div>
+          <div class="card-meta">Uploaded: Jan 2026</div>
+          <div class="card-link"><a href="https://youtube.com/shorts/tQHkV15n28I?feature=share" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">3,120</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">19.6 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">1:38</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">20</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">80</div></div>
+        <div class="stat"><div class="stat-label">Comments</div><div class="stat-value">3</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">81.9%</div></div>
+      </div>
+      <div class="pills"><span class="pill">25–34 top age group (50.5%)</span><span class="pill">Highest subscriber % in top 5 (18.1%)</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-gray">#4</span>
+          <div class="card-title">TXST Bobcats: Gameday Without A Trending Sound</div>
+          <div class="card-meta">Uploaded: Nov 2025</div>
+          <div class="card-link"><a href="https://www.youtube.com/watch?v=AXIjxy4r9SI" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">2,272</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">7.3 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">0:50</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">4</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">45</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">85.9%</div></div>
+        <div class="stat"><div class="stat-label">Top audience</div><div class="stat-value">35–44 (60.5%)</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-gray">#5</span>
+          <div class="card-title">Try Floating the San Marcos River</div>
+          <div class="card-meta">Uploaded: Nov 2025</div>
+          <div class="card-link"><a href="https://www.youtube.com/watch?v=X-P2VMADVm4" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">2,093</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">18 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">1:42</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">19</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">63</div></div>
+        <div class="stat"><div class="stat-label">Non-sub viewers</div><div class="stat-value">84.9%</div></div>
+        <div class="stat"><div class="stat-label">Demographics</div><div class="stat-value">Below threshold</div></div>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <h2>Lowest performing FY26 short</h2>
+    <div class="card lowest">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-red">Lowest</span>
+          <div class="card-title">Ring Ceremony at TXST</div>
+          <div class="card-meta">Uploaded: May 2026</div>
+          <div class="card-link"><a href="https://youtube.com/shorts/AzWrJNcyaAM?si=OuUwuzGrBMdsZ_Su" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">9</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">&lt;1 min</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">0:08</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">9</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">0</div></div>
+        <div class="stat"><div class="stat-label">Comments</div><div class="stat-value">0</div></div>
+      </div>
+      <div class="note-danger">&#9888; Video blocked on YouTube — this video contains copyrighted material. As a result, it has been blocked worldwide.</div>
+    </div>
+
+    <hr class="divider">
+    <h2>Top performing short — pre-FY26 (before Sept 2025)</h2>
+    <div class="card top-pre">
+      <div class="card-header">
+        <div class="card-left">
+          <span class="badge badge-green">Pre-FY26 top</span>
+          <div class="card-title">TXST Dorm Tour: Falls Hall</div>
+          <div class="card-meta">Uploaded: ~Jun 2025</div>
+          <div class="card-link"><a href="https://www.youtube.com/shorts/Uo1bJmfi4oM" target="_blank">&#9654; Watch on YouTube</a></div>
+        </div>
+        <div class="card-views"><div class="num">11,326</div><div class="lbl">views</div></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-label">Watch time</div><div class="stat-value">48.7 hrs</div></div>
+        <div class="stat"><div class="stat-label">Avg duration</div><div class="stat-value">1:00</div></div>
+        <div class="stat"><div class="stat-label">Shares</div><div class="stat-value">28</div></div>
+        <div class="stat"><div class="stat-label">Likes</div><div class="stat-value">188</div></div>
+        <div class="stat"><div class="stat-label">Comments</div><div class="stat-value">3</div></div>
+      </div>
+      <div class="pills"><span class="pill">Benchmark: highest likes of any short in dataset</span></div>
+      <div class="note-info">&#8505; This video was purchased from a student creator. Compensation was provided based on the number of views the original video received on Instagram.</div>
+    </div>
+
+  </div><!-- end tab-shorts -->
+
+</div><!-- end container -->
+
+<script>
+function showTab(tab, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tab).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
